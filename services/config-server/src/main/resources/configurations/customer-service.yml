@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/customer
+      host: localhost
+      port: 27017
+      database: customer
+      authentication-database: admin
