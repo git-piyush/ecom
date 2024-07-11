@@ -19,6 +19,7 @@ spring:
       properties:
         spring.json.type.mapping: orderConfirmation:com.alibou.ecommerce.kafka.OrderConfirmation
 
+
 application:
   config:
     customer-url: http://localhost:8222/api/v1/customers

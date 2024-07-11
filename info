@@ -1,0 +1,17 @@
+This is Springboot application
+
+Follow the below steps to execute this Application.
+1) Open docker-compose.yml as a terminal
+2) docker compose up -d
+3) Now keycloak need to be configured for security
+    a) http://localhost:9098/
+    b) Create realme option
+    c) use name 'micro-services'
+
+4) Start all the services  //check using http://localhost:8761/
+5) Go to Postman (Ecom by alibou)
+6) to authorize the request go to Authorization -> oauth 2.0
+    -> Access Token URL -> http://localhost:9098/realms/micro-services/protocol/openid-connect/token
+    -> Client ID -> micro-service-api
+    -> Client Secret -> lkkoJX8eByIzGAKOjOFjKoy8QPmP5lGD (get from step 3)
+    -> Click on "Get New Token" and use the generated token further to trigger request
